@@ -22,9 +22,9 @@ unwanted_cuisines = ['cafe', 'General-Store', 'Sweets']
 api_key = "uGrU3zH16DY2SouyKbtYcnTm63GdTDIFDCpA85yh"
 
 # Loading pre-trained restaurants from hyderabad to predict cuisines
-tfidf = joblib.load(".streamlit/tfidf_vectorizer.pkl")
-mlb = joblib.load(".streamlit/label_binarizer.pkl")
-model = joblib.load(".streamlit/cuisine_predictor.pkl")
+tfidf = joblib.load("tfidf_vectorizer.pkl")
+mlb = joblib.load("label_binarizer.pkl")
+model = joblib.load("cuisine_predictor.pkl")
 
 # User's geolocation
 g = geocoder.ip("me")
